@@ -1,46 +1,39 @@
 {
-  "extends": [
-    "airbnb-typescript",
-    "airbnb/hooks",
-    "plugin:@typescript-eslint/recommended",
-    "plugin:jest/recommended",
-    "prettier",
-    "prettier/react",
-    "prettier/@typescript-eslint",
-    "plugin:prettier/recommended"
-  ],
-  "plugins": ["react", "@typescript-eslint", "jest"],
   "env": {
     "browser": true,
-    "es6": true,
-    "jest": true
+    "es2021": true
   },
-  "globals": {
-    "Atomics": "readonly",
-    "SharedArrayBuffer": "readonly"
-  },
+  "extends": [
+    "plugin:react/recommended",
+    "airbnb",
+    "airbnb-typescript",
+    "airbnb/hooks",
+    "prettier",
+    "eslint-config-prettier",
+    "plugin:@typescript-eslint/recommended"
+    // "prettier/react",
+    // "prettier/@typescript-eslint",
+    // "plugin:prettier/recommended"
+  ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
     },
-    "ecmaVersion": 2018,
+    "ecmaVersion": 13,
     "sourceType": "module",
     "project": "./tsconfig.json"
   },
+  "plugins": ["react", "@typescript-eslint", "eslint-plugin-prettier"],
   "rules": {
     "prettier/prettier": ["error"],
     "@typescript-eslint/lines-between-class-members": 0,
-    "@typescript-eslint/no-explicit-any": 0,
-    "class-methods-use-this": "off",
+    "@typescript-eslint/no-explicit-any": "warn",
     "@typescript-eslint/comma-dangle": "off",
-    "@typescript-eslint/no-unused-vars": "warn",
-    "no-return-await": "off",
+    "arrow-body-style": ["error", "always"],
     "react/jsx-props-no-spreading": "off",
-    "react/prop-types": "off",
-    "no-nested-ternary": 0,
+    "react/function-component-definition": "off",
     "max-classes-per-file": "off",
-    "react/require-default-props": "off",
     "import/prefer-default-export": "off",
     "@typescript-eslint/ban-ts-comment": "off",
     "@typescript-eslint/no-empty-interface": "off",

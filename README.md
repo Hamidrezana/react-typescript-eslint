@@ -1,4 +1,4 @@
-# react-eslint
+# react-typescript-eslint
 
 ### Installing dependencies
 

@@ -7,5 +7,12 @@
   "arrowParens": "avoid",
   "printWidth": 100,
   "trailingComma": "all",
-  "endOfLine": "auto"
+  "endOfLine": "auto",
+  "importOrder": [
+    "^react(.*)$",
+    "<THIRD_PARTY_MODULES>",
+    "^@/(.*)$",
+    "^~/",
+    "^[./]"
+  ]
 }
